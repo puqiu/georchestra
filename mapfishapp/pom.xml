@@ -13,6 +13,7 @@
   <properties>
     <maven.test.skip>false</maven.test.skip>
     <spring.version>3.1.0.RELEASE</spring.version>
+    <gt.version>19.0</gt.version>
   </properties>
   <dependencies>
     <dependency>
@@ -119,7 +120,7 @@
     <dependency>
       <groupId>org.geotools</groupId>
       <artifactId>gt-mif</artifactId>
-      <version>${gt.version}</version>
+      <version>2.5.5</version>
     </dependency>
     <dependency>
       <groupId>org.geotools</groupId>
