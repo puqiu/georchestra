@@ -275,6 +275,7 @@ class GeotoolsFeatureReader implements FeatureGeoFileReader {
 
         HashMap<String, Serializable> params = new HashMap<String, Serializable>();
         params.put(MIFDataStoreFactory.PARAM_PATH.key, file.getAbsolutePath());
+        params.put(MIFDataStoreFactory.PARAM_DBTYPE.key, "mif");
         DataStore store = storeFactory.createDataStore(params);
 
         String typeName = FilenameUtils.getBaseName(file.getAbsolutePath());
