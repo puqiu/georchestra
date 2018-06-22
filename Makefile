@@ -36,6 +36,9 @@ docker-build-geoserver-geofence: docker-pull-jetty
 docker-build-console: build-deps docker-pull-jetty
 	./mvn clean package docker:build -Pdocker -DskipTests --pl console
 
+docker-build-proxy: build-deps docker-pull-jetty
+	./mvn clean package docker:build -Pdocker -DskipTests --pl security-proxy
+
 docker-build-georchestra: build-deps docker-pull-jetty docker-build-database docker-build-ldap docker-build-geoserver docker-build-gn3
 	./mvn clean package docker:build -Pdocker -DskipTests --pl extractorapp,cas-server-webapp,security-proxy,mapfishapp,header,console,analytics,geowebcache-webapp,atlas
 
