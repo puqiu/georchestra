@@ -34,6 +34,8 @@
   "tab.logs"              : "Logs",
   "tab.manage"            : "Manage",
   "tab.area"              : "Area",
+  "area.import"           : "Import CSV",
+  "area.export"           : "Export CSV",
 
   "user.userlist"         : "All users",
   "user.updated"          : "User updated",
